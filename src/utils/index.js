@@ -14,7 +14,6 @@ exports.add = async (entryObject) => {
 exports.list = async(entryObject) => {
     try {
         const movie = new Movie (entryObject);
-            if (error) return console.error(error);
             console.log(movie)
     
     } catch (error) {
@@ -37,7 +36,6 @@ exports.remove = async(titleInput) =>{
     let query = { title: titleInput };
     try {
         Movie.findOneAndRemove(query, function (error, movie){
-            if (error) return handleError(error);
             console.log(`${movie.title} has been removed from the list.`)
         })
     } catch (error) {

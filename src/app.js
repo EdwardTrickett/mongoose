@@ -1,7 +1,6 @@
 require("./db/connection");
 const { add, list, update , remove } = require("./utils");
 const yargs = require("yargs");
-const { end } = require("./db/connection");
 const command = process.argv[2];
 const title = yargs.argv.title;
 const actor = yargs.argv.actor;
