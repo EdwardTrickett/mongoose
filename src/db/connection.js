@@ -11,7 +11,7 @@ const connection = async () => {
     } catch (error) {
         console.log(error)
     }
-};node 
+};
 
 const disconnect = () => {
     mongoose.disconnect()
